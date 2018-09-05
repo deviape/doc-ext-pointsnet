@@ -410,9 +410,10 @@ programme_list (
  ]
 ```
 
+### Penjelasan
 Query ini berfungsi untuk menampilkan daftar program yang aktif.
 
-### Arguments
+### Argumen
 Field | Tipe Data | Contoh | Wajib | Deskripsi
 ------|-----------|--------|-------|----------
 active_only | Boolean | true | Y | Menampilkan daftar program yang aktif. active_only bernilai true apabila program berstatus aktif dan active_only bernilai false apabila program berstatus tidak aktif.
