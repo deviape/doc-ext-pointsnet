@@ -390,7 +390,7 @@ programme_list (
 ```
 
 ```json
-{
+[
   { 
     "card_number_format" : "XXXX XXXX XXXX XXXX",
     "description"        : "Bank BCA bagi bagi promo point",
@@ -407,26 +407,26 @@ programme_list (
     "logo"               : "https://media.licdn.com/dms/image/C510BAQGvQkJ994tLwA/company-logo_200_200/0?e=1543449600&v=beta&t=Pc43SWEhxP7fst1WFZbvfoQjC3W7uPJVwDC0801KgWM",
     "name"               : "Admin Programme" 
   }
- }
+ ]
 ```
 
-Query ini berfungsi untuk menampilkan list program yang aktif
+Query ini berfungsi untuk menampilkan list program yang aktif.
 
 ### Arguments
 
 Field | Tipe Data | Contoh | Wajib | Deskripsi
 ------|-----------|--------|-------|----------
-active_only | Boolean | true | Y | Menampilkan list program yang aktif
+active_only | Boolean | true | Y | Menampilkan list program yang aktif.
 
 Hasil dari request diatas akan berisi informasi seperti berikut:
 
 ### Fields
 Field | Tipe Data | Contoh | Deskripsi
 ------|-----------|--------|----------
-id | String | "a02fd8bb-b6c0-4bbe-bcbb-9045a2b974ea" | ID dari program yang ditawarkan.
-name | String | "BCA BAGI BAGI" | Nama dari program yang ditawarkan.
-logo | String | "https://2.bp.blogspot.com/-_BITDWSaNos/WKggIVMUczI/AAAAAAAAB4g/d5-te8J3Ahos89_RQf0UkbTXKOQVQHDRwCPcB/s1600/Logo%2BBank%2BBCA_PNG.png" | Logo dari merchant yang menawarkan program.
+id | String | "d2971e38-5236-4656-822c-c6440916c5a8" | ID dari program yang ditawarkan.
+name | String | "Dummy programme for admin id" | Nama dari program yang ditawarkan.
+logo | String | "https://your_image_logo.com" | Logo dari merchant yang menawarkan program.
 card_number_format | String | "XXXX XXXX XXXX XXXX" | Format penulisan nomor kartu kredit yang diizinkan, disimbolkan dengan X.
-is_bank | Boolean | true | Status merchant ( bank atau non bank). is_bank bernilai true apabila program ditawarkan dari merchant bank dan is_bank bernilai false apabila program ditawarkan dari merchant non bank.
-description | String | "Bank BCA bagi bagi promo point" | Deskripsi dari program yang ditawarkan.
+is_bank | Boolean | false | Status merchant ( bank atau non bank). is_bank bernilai true apabila program ditawarkan dari merchant bank dan is_bank bernilai false apabila program ditawarkan dari merchant non bank.
+description | String | "Admin Programme" | Deskripsi dari program yang ditawarkan.
 
