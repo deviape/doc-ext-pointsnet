@@ -390,20 +390,24 @@ programme_list (
 ```
 
 ```json
-[ 
-{ card_number_format: 'XXXX XXXX XXXX XXXX',
-    description: '<p>Bank BCA bagi bagi promo point</p>',
-    id: 'a02fd8bb-b6c0-4bbe-bcbb-9045a2b974ea',
-    is_bank: true,
-    logo: 'https://2.bp.blogspot.com/-_BITDWSaNos/WKggIVMUczI/AAAAAAAAB4g/d5-te8J3Ahos89_RQf0UkbTXKOQVQHDRwCPcB/s1600/Logo%2BBank%2BBCA_PNG.png',
-    name: 'BCA BAGI BAGI' },
-  { card_number_format: 'XXXX XXXX XXXX XXXX',
-    description: '<p>Dummy programme for admin id</p>',
-    id: 'd2971e38-5236-4656-822c-c6440916c5a8',
-    is_bank: false,
-    logo: 'https://media.licdn.com/dms/image/C510BAQGvQkJ994tLwA/company-logo_200_200/0?e=1543449600&v=beta&t=Pc43SWEhxP7fst1WFZbvfoQjC3W7uPJVwDC0801KgWM',
-    name: 'Admin Programme' }
- ]
+{
+  { 
+    "card_number_format" : "XXXX XXXX XXXX XXXX",
+    "description"        : "Bank BCA bagi bagi promo point",
+    "id"                 : "a02fd8bb-b6c0-4bbe-bcbb-9045a2b974ea",
+    "is_bank"            : true,
+    "logo"               : "https://2.bp.blogspot.com/-_BITDWSaNos/WKggIVMUczI/AAAAAAAAB4g/d5-te8J3Ahos89_RQf0UkbTXKOQVQHDRwCPcB/s1600/Logo%2BBank%2BBCA_PNG.png",
+    "name"               : "BCA BAGI BAGI" 
+  },
+  { 
+    "card_number_format" : "XXXX XXXX XXXX XXXX",
+    "description"        : "<p>Dummy programme for admin id</p>",
+    "id"                 : "d2971e38-5236-4656-822c-c6440916c5a8",
+    "is_bank"            : false,
+    "logo"               : "https://media.licdn.com/dms/image/C510BAQGvQkJ994tLwA/company-logo_200_200/0?e=1543449600&v=beta&t=Pc43SWEhxP7fst1WFZbvfoQjC3W7uPJVwDC0801KgWM",
+    "name"               : "Admin Programme" 
+  }
+ }
 ```
 
 Query ini berfungsi untuk menampilkan list program yang aktif
