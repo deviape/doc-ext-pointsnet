@@ -375,7 +375,7 @@ background_color_first | String | "#FF5733" | Ini adalah kode warna latar kedua
 angle | Integer | 360 | Ini adalah nilai derajat dari tata letak tema
 [Kembali ke daftar obyek](#obyek)
 
-## Mendapatkan List Program (Hanya program aktif)
+## Daftar Program (Hanya program aktif)
 ```scheme
 programme_list (
         active_only: true
@@ -410,13 +410,12 @@ programme_list (
  ]
 ```
 
-Query ini berfungsi untuk menampilkan list program yang aktif.
+Query ini berfungsi untuk menampilkan daftar program yang aktif.
 
 ### Arguments
-
 Field | Tipe Data | Contoh | Wajib | Deskripsi
 ------|-----------|--------|-------|----------
-active_only | Boolean | true | Y | Menampilkan list program yang aktif. active_only bernilai true apabila merchant berstatus aktif dan active_only bernilai false apabila merchant berstatus tidak aktif.
+active_only | Boolean | true | Y | Menampilkan daftar program yang aktif. active_only bernilai true apabila program berstatus aktif dan active_only bernilai false apabila program berstatus tidak aktif.
 
 Hasil dari request diatas akan berisi informasi seperti berikut:
 
@@ -425,8 +424,8 @@ Field | Tipe Data | Contoh | Deskripsi
 ------|-----------|--------|----------
 id | String | "d2971e38-5236-4656-822c-c6440916c5a8" | ID dari program yang ditawarkan.
 name | String | "Dummy programme" | Nama dari program yang ditawarkan.
-logo | String | "https://your_image_logo.com" | URL logo dari merchant yang menawarkan program.
+logo | String | "https://your_image_logo.com" | URL logo dari *merchant* yang menawarkan program.
 card_number_format | String | "XXXX XXXX XXXX XXXX" | Format penulisan nomor kartu kredit.
-is_bank | Boolean | false | Status merchant ( bank atau non bank). is_bank bernilai true apabila program ditawarkan dari merchant bank dan is_bank bernilai false apabila program ditawarkan dari merchant non bank.
+is_bank | Boolean | false | Status *merchant* ( bank atau non bank). is_bank bernilai true apabila program ditawarkan dari *merchant* bank dan is_bank bernilai false apabila program ditawarkan dari *merchant* non bank.
 description | String | "Admin Programme" | Deskripsi dari program yang ditawarkan.
 
